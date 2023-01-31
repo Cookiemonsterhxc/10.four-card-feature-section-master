@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 0.1px);
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  max-width: 1440px;
+  background-color: var(--very-light-gray);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 2rem;
+}
+h1 {
+  margin-bottom: 0.3rem;
+  color: var(--grayish-blue);
+  font-weight: 400;
+}
+h1:nth-child(2) {
+  color: var(--very-dark-blue);
+  font-weight: 600;
+}
+h2 {
+  margin-bottom: 0.8rem;
+}
+
+p {
+  color: var(--grayish-blue);
+  margin-top: 1rem;
+}
+
+.header__section {
+  text-align: center;
+}
+
+.supervisor {
+  border-top: 5px solid var(--cyan);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.team__builder {
+  border-top: 5px solid var(--red);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.karma {
+  border-top: 5px solid var(--orange);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.calculator {
+  border-top: 5px solid var(--blue);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cards__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.middle__section {
+  flex-direction: column;
+}
+.card {
+  margin: 3rem;
+  background-color: var(--very-light-gray);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  max-width: 400px;
+}
+
+.logo {
+  text-align: right;
+}
+.logo img {
+  max-width: 50px;
+  margin-top: 2rem;
+}
+
+@media (max-width: 800px) {
+  body {
+    display: block;
+  }
+
+  main {
+    padding: 1rem;
+  }
+  br {
+    display: none;
+  }
+
+  .header__section {
+    text-align: start;
+  }
+
+  .cards__container {
+    flex-direction: column;
+  }
+  .card {
+    margin: 2rem 0;
+  }
+}
